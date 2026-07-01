@@ -1,0 +1,75 @@
+{
+  "brand": "Minimal Limited",
+  "philosophy": "Ultra-luxury, organic minimalism, buttery-smooth interactions",
+  "colors": {
+    "background": {
+      "primary": "#fefae0",
+      "secondary": "#283618",
+      "accent": "#606c38"
+    },
+    "text": {
+      "heading": "#283618",
+      "body": "#283618",
+      "light": "#fefae0",
+      "muted": "#606c38"
+    },
+    "accents": {
+      "gold": "#dda15e",
+      "rust": "#bc6c25",
+      "surface": "rgba(40, 54, 24, 0.05)"
+    }
+  },
+  "typography": {
+    "primary_font": {
+      "family": "'Cormorant Garamond', serif",
+      "import": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap",
+      "usage": "Headings, Large Displays, Hero sections"
+    },
+    "secondary_font": {
+      "family": "'Inter', sans-serif",
+      "import": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap",
+      "usage": "Navigation, Body copy, Buttons, Metadata"
+    },
+    "styles": {
+      "hero_title": {
+        "size": "clamp(3rem, 8vw, 10rem)",
+        "line_height": "0.9",
+        "letter_spacing": "-0.03em"
+      },
+      "body_copy": {
+        "size": "1.1rem",
+        "line_height": "1.6",
+        "letter_spacing": "0.01em"
+      }
+    }
+  },
+  "layout": {
+    "container": "95vw",
+    "gutter": "2rem",
+    "corners": {
+      "sharp": "0px",
+      "soft": "4px",
+      "button": "200px"
+    },
+    "spacing": {
+      "section": "clamp(8rem, 15vh, 12rem)",
+      "element": "2rem"
+    }
+  },
+  "motion": {
+    "easing": {
+      "luxury_glide": [0.22, 1, 0.36, 1],
+      "snappy_reveal": [0.16, 1, 0.3, 1]
+    },
+    "duration": {
+      "slow": 1.2,
+      "medium": 0.8,
+      "fast": 0.4
+    },
+    "lenis_config": {
+      "lerp": 0.07,
+      "wheelMultiplier": 0.8,
+      "smoothWheel": true
+    }
+  }
+}
