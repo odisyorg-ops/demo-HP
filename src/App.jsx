@@ -10,6 +10,7 @@ import Footer from './component/Footer'
 import CuratedSuite from './component/CuratedSuite'
 import BespokeProcess from './component/BespokeProcess'
 import FeaturedProjects from './component/FeaturedProjects'
+import ContactConcierge from './component/ContactConcierge'
 
 function App() {
   useEffect(() => {
@@ -70,6 +71,10 @@ function App() {
       {/* 4. Featured Architectural Projects */}
       <div className="rounded-lg md:rounded-lg overflow-hidden bg-[#0A0A0A]">
         <FeaturedProjects />
+      </div>
+      {/* 4. Featured Architectural Projects */}
+      <div className="rounded-lg md:rounded-lg overflow-hidden bg-[#0A0A0A]">
+        <ContactConcierge></ContactConcierge>
       </div>
 
       {/* Footer */}

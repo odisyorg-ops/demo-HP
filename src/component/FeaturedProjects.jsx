@@ -1,23 +1,37 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
+// Import all 12 local product pictures
+import productPic1 from "../assets/productPic (1).jpg";
+import productPic2 from "../assets/productPic (2).jpg";
+import productPic3 from "../assets/productPic (3).jpg";
+import productPic4 from "../assets/productPic (4).jpg";
+import productPic5 from "../assets/productPic (5).jpg";
+import productPic6 from "../assets/productPic (6).jpg";
+import productPic7 from "../assets/productPic (7).jpg";
+import productPic8 from "../assets/productPic (8).jpg";
+import productPic9 from "../assets/productPic (9).jpg";
+import productPic10 from "../assets/productPic (10).jpg";
+import productPic11 from "../assets/productPic (11).jpg";
+import productPic12 from "../assets/productPic (12).jpg";
+
 export default function SignatureProducts() {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // 12 curated product images with varied aspect ratios to create the Pinterest/Masonry effect
+  // 12 curated product images using the local imports
   const products = [
-    { id: 1, title: "Aura Faucet", finish: "Brushed Brass", aspect: "aspect-[3/4]", image: "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?q=80&w=800&auto=format&fit=crop" },
-    { id: 2, title: "Lumina Tub", finish: "Matte White", aspect: "aspect-square", image: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=800&auto=format&fit=crop" },
-    { id: 3, title: "Zenith Shower", finish: "Gunmetal", aspect: "aspect-[4/5]", image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800&auto=format&fit=crop" },
-    { id: 4, title: "Chef's Mixer", finish: "Stainless Steel", aspect: "aspect-[3/5]", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop" },
-    { id: 5, title: "Onyx Basin", finish: "Nero Marquina", aspect: "aspect-video", image: "https://images.unsplash.com/photo-1613512396345-667ec2eb25e4?q=80&w=800&auto=format&fit=crop" },
-    { id: 6, title: "Pillar Tap", finish: "Polished Nickel", aspect: "aspect-[3/4]", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" },
-    { id: 7, title: "Freestanding Mixer", finish: "Brushed Gold", aspect: "aspect-square", image: "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?q=80&w=800&auto=format&fit=crop" },
-    { id: 8, title: "Farmhouse Sink", finish: "Fireclay White", aspect: "aspect-[4/3]", image: "https://images.unsplash.com/photo-1556912167-f556f1f39fdf?q=80&w=800&auto=format&fit=crop" },
-    { id: 9, title: "Rainhead", finish: "Matte Black", aspect: "aspect-[3/4]", image: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=800&auto=format&fit=crop" },
-    { id: 10, title: "Wall Mounted Spout", finish: "Aged Bronze", aspect: "aspect-square", image: "https://images.unsplash.com/photo-1620626011317-09d58ccb0566?q=80&w=800&auto=format&fit=crop" },
-    { id: 11, title: "Vessel Sink", finish: "Concrete", aspect: "aspect-[3/5]", image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=800&auto=format&fit=crop" },
-    { id: 12, title: "Thermostatic Valve", finish: "Chrome", aspect: "aspect-[4/3]", image: "https://images.unsplash.com/photo-1585314062604-1a357de8b000?q=80&w=800&auto=format&fit=crop" },
+    { id: 1, title: "Aura Faucet", finish: "Brushed Brass", aspect: "aspect-[3/4]", image: productPic1 },
+    { id: 2, title: "Lumina Tub", finish: "Matte White", aspect: "aspect-square", image: productPic2 },
+    { id: 3, title: "Zenith Shower", finish: "Gunmetal", aspect: "aspect-[4/5]", image: productPic3 },
+    { id: 4, title: "Chef's Mixer", finish: "Stainless Steel", aspect: "aspect-[3/5]", image: productPic4 },
+    { id: 5, title: "Onyx Basin", finish: "Nero Marquina", aspect: "aspect-video", image: productPic5 },
+    { id: 6, title: "Pillar Tap", finish: "Polished Nickel", aspect: "aspect-[3/4]", image: productPic6 },
+    { id: 7, title: "Freestanding Mixer", finish: "Brushed Gold", aspect: "aspect-square", image: productPic7 },
+    { id: 8, title: "Farmhouse Sink", finish: "Fireclay White", aspect: "aspect-[4/3]", image: productPic8 },
+    { id: 9, title: "Rainhead", finish: "Matte Black", aspect: "aspect-[3/4]", image: productPic9 },
+    { id: 10, title: "Wall Mounted Spout", finish: "Aged Bronze", aspect: "aspect-square", image: productPic10 },
+    { id: 11, title: "Vessel Sink", finish: "Concrete", aspect: "aspect-[3/5]", image: productPic11 },
+    { id: 12, title: "Thermostatic Valve", finish: "Chrome", aspect: "aspect-[4/3]", image: productPic12 },
   ];
 
   return (
@@ -51,7 +65,7 @@ export default function SignatureProducts() {
             {/* Image */}
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-[1.5s] ease-out group-hover:scale-105"
-              style={{ backgroundImage: `url(${item.image})` }}
+              style={{ backgroundImage: `url("${item.image}")` }}
             />
             
             {/* Dark overlay on hover */}
